@@ -11,10 +11,10 @@ pipeline:
   analyzer: "char_wb"
   min_ngram: 1
   max_ngram: 4
-- name: "EmbeddingIntentClassifier"
+- name: "DIETClassifier"
 
 policies:
-  - name: EmbeddingPolicy
+  - name: TEDPolicy
     epochs: 100
     max_history: 5
   - name: FallbackPolicy
